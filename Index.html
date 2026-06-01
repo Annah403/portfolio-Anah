@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Annah Mwanza — Web Designer & Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AM<span class="dot">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+
+    <div class="hero-inner container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Annah<br /><em>Mwanza</em></h1>
+        <h2 class="hero-title">Web Designer &amp; Web Developer</h2>
+        <p class="hero-tagline">
+          I design and build responsive websites that are clean,<br class="hide-sm" />
+          user-friendly, and purposeful.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#" class="btn btn-outline" download>Download CV</a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Image -->
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <!-- Replace the src with Annah's actual photo -->
+          <img
+            src="myprofpic.png"
+            alt="Annah Mwanza — Web Designer & Developer"
+            class="hero-photo"
+            onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');"
+          />
+          <!-- Fallback initials shown when no photo is present -->
+          <div class="hero-initials-fallback">AM</div>
+        </div>
+        <!-- Floating decoration chips -->
+        <div class="hero-chip chip-top">
+          <span class="chip-dot"></span> Web Designer
+        </div>
+        <div class="hero-chip chip-bottom">
+          <span class="chip-dot"></span> Python Developer
+        </div>
+        <!-- Available badge on image side -->
+        <div class="hero-badge">Available for work</div>
+      </div>
+
+    </div><!-- /.hero-inner -->
+
+    <div class="scroll-cue"><span></span></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-avatar">
+            <span class="avatar-initials">AM</span>
+          </div>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Learning</span></div>
+            <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects Built</span></div>
+            <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Skills Gained</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-heading">Crafting digital<br /><em>experiences</em> with purpose</h2>
+          <p>I'm Annah Mwanza — a passionate web designer and developer with a genuine love for building clean, functional, and visually engaging websites. My journey in tech has been fuelled by curiosity and a deep desire to solve real-world problems through technology.</p>
+          <p>Beyond front-end design, I'm building expertise in <strong>Python</strong> and <strong>Django</strong> — exploring how powerful back-end systems can work seamlessly with beautiful interfaces. I believe great websites aren't just attractive; they're purposeful tools that create real impact.</p>
+          <p>Whether I'm designing a user interface, writing clean HTML &amp; CSS, or building a Django-powered system, I bring attention to detail, a growth mindset, and genuine enthusiasm to every project.</p>
+          <div class="about-tags">
+            <span class="tag">UI/UX Enthusiast</span>
+            <span class="tag">Problem Solver</span>
+            <span class="tag">Continuous Learner</span>
+            <span class="tag">Python Developer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">02 — Skills</div>
+      <h2 class="section-heading">Tools &amp; <em>Technologies</em></h2>
+      <p class="section-sub">A growing toolkit for building modern web experiences.</p>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="code-2"></i></div><h3>HTML</h3><p>Semantic, accessible markup that forms the backbone of every web page.</p><div class="skill-bar"><div class="skill-fill" style="--pct:85%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="palette"></i></div><h3>CSS</h3><p>Crafting layouts, animations, and responsive designs with modern CSS techniques.</p><div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="zap"></i></div><h3>JavaScript</h3><p>Adding interactivity, DOM manipulation, and dynamic behaviour to web pages.</p><div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="terminal"></i></div><h3>Python</h3><p>Writing clean, readable scripts for logic, automation, and back-end development.</p><div class="skill-bar"><div class="skill-fill" style="--pct:70%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="server"></i></div><h3>Django</h3><p>Building robust web applications using Python's powerful full-stack framework.</p><div class="skill-bar"><div class="skill-fill" style="--pct:55%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="git-branch"></i></div><h3>Git &amp; GitHub</h3><p>Version control, branching strategies, and collaboration on remote repositories.</p><div class="skill-bar"><div class="skill-fill" style="--pct:72%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="layout-dashboard"></i></div><h3>UI/UX Design</h3><p>Designing user-centred interfaces that are intuitive, accessible, and refined.</p><div class="skill-bar"><div class="skill-fill" style="--pct:68%"></div></div></div>
+        <div class="skill-card"><div class="skill-icon"><i data-lucide="smartphone"></i></div><h3>Responsive Design</h3><p>Ensuring seamless, beautiful experiences across all screen sizes and devices.</p><div class="skill-bar"><div class="skill-fill" style="--pct:82%"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">03 — Projects</div>
+      <h2 class="section-heading">Selected <em>Work</em></h2>
+      <p class="section-sub">A handful of projects I've built while growing my skills.</p>
+      <div class="projects-grid">
+
+        <article class="project-card">
+  <div class="project-number">01</div>
+  <div class="project-body">
+    <h3>Freelancer Connect Platform</h3>
+    <p>
+      A web-based platform that connects clients with skilled freelancers.
+      Clients can post projects, browse freelancer profiles, and hire talent,
+      while freelancers can showcase their skills, apply for jobs, and manage
+      projects efficiently through a user-friendly interface.
+    </p>
+    <div class="project-tech">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>Django</span>
+    </div>
+  </div>
+  <div class="project-links">
+    <a href="https://annah403.github.io/Aerial/"target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+    <a href="https://github.com/Annah403/Aerial.git" target="_blank" rel="noopener noreferrer"class="btn btn-sm btn-ghost">
+      <i data-lucide="github"></i> GitHub
+    </a>
+  </div>
+</article>
+
+        <article class="project-card">
+          <div class="project-number">02</div>
+          <div class="project-body">
+            <h3>Fitness Management System</h3>
+            <p>A web-based system for managing gym members, tracking fitness progress, and scheduling sessions. Built with a focus on usability for both staff and gym-goers.</p>
+            <div class="project-tech"><span>Python</span><span>Django</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i data-lucide="github"></i> GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">03</div>
+          <div class="project-body">
+            <h3>Library Management System</h3>
+            <p>A system to help libraries manage book inventory, member registrations, borrowing records, and return tracking — all from a single, intuitive dashboard.</p>
+            <div class="project-tech"><span>Python</span><span>Django</span><span>SQLite</span><span>CSS</span></div>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i data-lucide="github"></i> GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-number">04</div>
+          <div class="project-body">
+            <h3>Surveying Website</h3>
+            <p>A professional website for a surveying firm, showcasing their services, project portfolio, and contact information — designed for clarity and trust-building with clients.</p>
+            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </div>
+          <div class="project-links">
+            <a href="https://annah403.github.io/Tomsurveyor/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Live Demo</a>
+            <a href="#" class="btn btn-sm btn-ghost"><i data-lucide="github"></i> GitHub</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-label">04 — Services</div>
+      <h2 class="section-heading">What I <em>Offer</em></h2>
+      <p class="section-sub">Here's how I can help bring your ideas to life.</p>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon"><i data-lucide="pen-tool"></i></div><h3>Website Design</h3><p>Visually appealing, user-centred designs that communicate your brand clearly and leave a lasting impression.</p></div>
+        <div class="service-card"><div class="service-icon"><i data-lucide="code"></i></div><h3>Website Development</h3><p>Turning designs into fully functional websites with clean, maintainable code built to modern web standards.</p></div>
+        <div class="service-card"><div class="service-icon"><i data-lucide="monitor-smartphone"></i></div><h3>Responsive Design</h3><p>Ensuring your website looks and works beautifully on every device — from smartphones to large desktops.</p></div>
+        <div class="service-card"><div class="service-icon"><i data-lucide="briefcase"></i></div><h3>Portfolio Website Creation</h3><p>Building professional portfolio websites that showcase your work, skills, and personality to clients and employers.</p></div>
+        <div class="service-card"><div class="service-icon"><i data-lucide="database"></i></div><h3>Basic System Development</h3><p>Developing simple but functional web-based management systems using Python and Django.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <h2 class="section-heading">Let's <em>Connect</em></h2>
+      <p class="section-sub">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item"><div class="contact-icon"><i data-lucide="mail"></i></div><div><span class="contact-label">Email</span><a href="mailto:annah@example.com" class="contact-value">annah@example.com</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><i data-lucide="linkedin"></i></div><div><span class="contact-label">LinkedIn</span><a href="https://linkedin.com/in/annahmwanza" target="_blank" class="contact-value">linkedin.com/in/annahmwanza</a></div></div>
+          <div class="contact-item"><div class="contact-icon"><i data-lucide="github"></i></div><div><span class="contact-label">GitHub</span><a href="https://github.com/annahmwanza" target="_blank" class="contact-value">github.com/annahmwanza</a></div></div>
+          <blockquote class="contact-quote">"The best way to predict the future is to build it."</blockquote>
+        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="Jane Doe" required /></div>
+          <div class="form-group"><label for="email">Your Email</label><input type="email" id="email" name="email" placeholder="jane@example.com" required /></div>
+          <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message &nbsp;<i data-lucide="send"></i></button>
+          <div class="form-success" id="form-success">✓ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-logo">AM<span class="dot">.</span></a>
+      <p class="footer-copy">© 2026 Annah Mwanza. Built with passion and purpose.</p>
+      <div class="footer-socials">
+        <a href="mailto:annah@example.com" aria-label="Email"><i data-lucide="mail"></i></a>
+        <a href="https://linkedin.com/in/annahmwanza" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="https://github.com/annahmwanza" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
